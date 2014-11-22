@@ -5,7 +5,7 @@ readonly base_dir="${HOME}/ops/repos"
 readonly repo_dir="${base_dir}/server_config.svn"
 readonly work_dir="${base_dir}/svn_worktree"
 
-# Cleanup
+# Cleanup(Repository/WorkTree)
 [ -d "${repo_dir}" ] && rm -rf "${repo_dir}"
 [ -d "${work_dir}" ] && rm -rf "${work_dir}"
 
