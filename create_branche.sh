@@ -26,7 +26,7 @@ if [ -d "${work_co_dir}" ]; then
     cd "${work_co_dir}" 
     svn info > /dev/null 2>&1 && svn update >/dev/null
 else
-    cd "${work_dir}" && svn co file://${base_dir}
+    cd "${work_dir}" && svn co file://${repo_dir}
     cd "${work_co_dir}" 
 fi
 
